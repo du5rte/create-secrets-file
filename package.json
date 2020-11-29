@@ -1,0 +1,27 @@
+{
+  "name": "create-secrets-file",
+  "version": "1.0.0",
+  "description": "Creates a secrets .env by taking environment keys from github secrets",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "secrets": "^1.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "ncc build index.js --license licenses.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/du5rte/create-secrets-file.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/du5rte/create-secrets-file/issues"
+  },
+  "homepage": "https://github.com/du5rte/create-secrets-file#readme"
+}

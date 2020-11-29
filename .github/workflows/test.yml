@@ -1,0 +1,23 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Test
+
+on:
+  push:
+    tags:
+    - '*'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Runs this action
+    steps:
+      - name: action
+        uses: du5rte/create-secrets-file@v1
+        with:
+          secrets: |
+            API_KEY=${{ secrets.API_KEY }}
+            SECRET_KEY=${{ secrets.SECRET_KEY }}
+            DB_URI=${{ secrets.DB_URI }}
+          file: .env # optional

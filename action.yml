@@ -1,0 +1,33 @@
+name: 'Create Secrets File Action'
+description: 'Creating a secrets file from github secrets.'
+inputs:
+  secrets:
+    description: 'The environment keys'
+    required: true
+  file:
+    description: 'The file name'
+    default: '.env'
+  mode:
+    description: 'Mode can be "dotenv" on "json"'
+    default: 'dotenv'
+  path:
+    description: 'The file root path'
+    # by default the directory will be
+    # '/home/runner/work/_actions/du5rte/create-secrets-file/v1'
+    # this will allow next actions to access it
+    default: '../../../..'
+outputs:
+  parsed:
+    description: 'Object version of secrets'
+  location:
+    description: 'Location of secrets file'
+  sanatized:
+    description: 'Sanatized version of secrets'
+  success: 
+    description: 'True or False' # boolean
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  color: black
+  icon: eye-off
