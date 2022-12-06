@@ -16,6 +16,12 @@ jobs:
     name: Runs this action
     steps:
       - uses: actions/checkout@v3
+      - name: setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: install
+        run: npm install
       - name: action
         uses: ./
         with:
