@@ -5,19 +5,26 @@ name: Test
 
 on:
   push:
-    tags:
-    - '*'
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
 
 jobs:
   test:
     runs-on: ubuntu-latest
     name: Runs this action
     steps:
+      - uses: actions/checkout@v3
       - name: action
-        uses: du5rte/create-secrets-file@v1
+        uses: .
         with:
           secrets: |
             API_KEY=${{ secrets.API_KEY }}
             SECRET_KEY=${{ secrets.SECRET_KEY }}
             DB_URI=${{ secrets.DB_URI }}
           file: .env # optional
+      - name: test
+        run: |
+          cat .env
+          echo
