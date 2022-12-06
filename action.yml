@@ -26,8 +26,8 @@ outputs:
   success: 
     description: 'True or False' # boolean
 runs:
-  using: 'node12'
-  main: 'index.js'
+  using: 'node16'
+  main: 'dist/index.js'
 branding:
-  color: black
+  color: gray-dark
   icon: eye-off
