@@ -1,6 +1,6 @@
-<p align="center"><a href="https://github.com/du5rte/secrets" target="_blank" rel="noopener noreferrer"><img width="100" src="key.svg" alt="Key"></a></p>
+<p align="center"><a href="https://github.com/du5rte/create-secrets-file" target="_blank" rel="noopener noreferrer"><img width="100" src="key.svg" alt="Key"></a></p>
 
-<p align="center"><a href="https://github.com/du5rte/secrets"><img alt="GitHub Actions Test Status" src="https://github.com/du5rte/secrets/workflows/Test/badge.svg"/></p>
+<p align="center"><a href="https://github.com/du5rte/create-secrets-file"><img alt="GitHub Actions Test Status" src="https://github.com/du5rte/create-secrets-file/workflows/Test/badge.svg"/></p>
 
 # Create Secrets File Action
 
