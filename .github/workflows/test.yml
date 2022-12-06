@@ -30,7 +30,6 @@ jobs:
             SECRET_KEY=${{ secrets.SECRET_KEY }}
             DB_URI=${{ secrets.DB_URI }}
           file: .env # optional
-          path: ../../.. # optional
       - name: test
         run: |
           pwd
