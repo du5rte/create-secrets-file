@@ -1,11 +1,11 @@
 {
   "name": "create-secrets-file",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Creates a secrets .env by taking environment keys from github secrets",
   "main": "index.js",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "@actions/github": "^4.0.0",
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
     "secrets": "^1.1.5"
   },
   "devDependencies": {},
