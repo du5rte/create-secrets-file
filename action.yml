@@ -15,7 +15,7 @@ inputs:
     # by default the directory will be
     # '/home/runner/work/_actions/du5rte/create-secrets-file/v1'
     # this will allow next actions to access it
-    default: '../../../../..'
+    default: '../../../..'
 outputs:
   parsed:
     description: 'Object version of secrets'
