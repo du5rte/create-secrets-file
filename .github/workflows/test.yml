@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: setup node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '16'
       - name: install
@@ -33,5 +33,6 @@ jobs:
           path: ../../.. # optional
       - name: test
         run: |
+          pwd
           cat .env
           echo
